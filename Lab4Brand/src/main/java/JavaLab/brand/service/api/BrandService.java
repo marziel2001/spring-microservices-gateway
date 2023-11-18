@@ -1,6 +1,6 @@
-package JavaLab.camera.service.api;
+package JavaLab.brand.service.api;
 
-import JavaLab.camera.entity.Brand;
+import JavaLab.brand.entity.Brand;
 
 import java.util.List;
 import java.util.Optional;

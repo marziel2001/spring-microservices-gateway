@@ -1,4 +1,4 @@
-package JavaLab.camera.dto;
+package JavaLab.brand.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

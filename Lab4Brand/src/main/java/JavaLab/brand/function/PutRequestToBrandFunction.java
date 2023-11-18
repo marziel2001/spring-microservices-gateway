@@ -1,7 +1,7 @@
-package JavaLab.camera.function;
+package JavaLab.brand.function;
 
-import JavaLab.camera.dto.PutBrandRequest;
-import JavaLab.camera.entity.Brand;
+import JavaLab.brand.dto.PutBrandRequest;
+import JavaLab.brand.entity.Brand;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;

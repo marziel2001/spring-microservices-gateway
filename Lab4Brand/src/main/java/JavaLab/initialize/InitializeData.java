@@ -1,7 +1,7 @@
 package JavaLab.initialize;
 
-import JavaLab.camera.entity.Brand;
-import JavaLab.camera.service.api.BrandService;
+import JavaLab.brand.entity.Brand;
+import JavaLab.brand.service.api.BrandService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

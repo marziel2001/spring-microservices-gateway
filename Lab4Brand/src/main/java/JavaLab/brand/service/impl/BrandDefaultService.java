@@ -1,8 +1,8 @@
-package JavaLab.camera.service.impl;
+package JavaLab.brand.service.impl;
 
-import JavaLab.camera.entity.Brand;
-import JavaLab.camera.repository.BrandRepository;
-import JavaLab.camera.service.api.BrandService;
+import JavaLab.brand.entity.Brand;
+import JavaLab.brand.repository.BrandRepository;
+import JavaLab.brand.service.api.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

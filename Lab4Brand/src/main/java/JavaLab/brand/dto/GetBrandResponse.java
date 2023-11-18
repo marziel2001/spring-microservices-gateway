@@ -1,15 +1,16 @@
-package JavaLab.camera.dto;
+package JavaLab.brand.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Data
-public class PutBrandRequest {
+public class GetBrandResponse {
+
+    private UUID uuid;
 
     private String name;
 

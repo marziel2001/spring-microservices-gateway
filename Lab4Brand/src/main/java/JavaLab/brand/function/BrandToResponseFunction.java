@@ -1,7 +1,7 @@
-package JavaLab.camera.function;
+package JavaLab.brand.function;
 
-import JavaLab.camera.dto.GetBrandResponse;
-import JavaLab.camera.entity.Brand;
+import JavaLab.brand.dto.GetBrandResponse;
+import JavaLab.brand.entity.Brand;
 import org.springframework.stereotype.Component;
 
 import java.util.function.Function;

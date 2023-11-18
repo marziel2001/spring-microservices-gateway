@@ -1,6 +1,6 @@
-package JavaLab.camera.event.repository.rest;
+package JavaLab.brand.event.repository.rest;
 
-import JavaLab.camera.event.repository.api.BrandEventRepository;
+import JavaLab.brand.event.repository.api.BrandEventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;

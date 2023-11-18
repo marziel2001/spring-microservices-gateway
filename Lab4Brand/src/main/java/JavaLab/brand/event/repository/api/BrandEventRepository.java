@@ -1,4 +1,4 @@
-package JavaLab.camera.event.repository.api;
+package JavaLab.brand.event.repository.api;
 
 import java.util.UUID;
 

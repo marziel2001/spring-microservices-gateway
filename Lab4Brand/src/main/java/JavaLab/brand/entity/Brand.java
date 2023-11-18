@@ -1,4 +1,4 @@
-package JavaLab.camera.entity;
+package JavaLab.brand.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +12,7 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "brands")
-public class Brand implements Comparable<Brand>, Serializable {
+public class Brand implements Serializable {
 
     @Id
     private UUID uuid;
@@ -27,13 +27,4 @@ public class Brand implements Comparable<Brand>, Serializable {
     @Column(name = "brand_value_dollars")
     private Double brandValueDollars;
 
-    @Override
-    public int compareTo(Brand o) {
-        if(this.equals(o) && (this.hashCode() == o.hashCode())) {
-            return 0;
-        }
-        else {
-            return this.name.toLowerCase().compareTo(o.name.toLowerCase());
-        }
-    }
 }

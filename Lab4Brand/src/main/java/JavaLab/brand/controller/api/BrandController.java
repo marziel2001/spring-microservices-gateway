@@ -1,5 +1,9 @@
-package JavaLab.camera.controller.api;
+package JavaLab.brand.controller.api;
 
+import JavaLab.brand.dto.GetBrandResponse;
+import JavaLab.brand.dto.GetBrandsResponse;
+import JavaLab.brand.dto.PatchBrandRequest;
+import JavaLab.brand.dto.PutBrandRequest;
 import JavaLab.camera.dto.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
