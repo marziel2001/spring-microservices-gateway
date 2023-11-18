@@ -25,7 +25,7 @@ public class BrandDefaultService implements BrandService {
 
 
     @Override
-    public List<Brand> listAll() {
+    public List<Brand> findAll() {
         return repository.findAll();
     }
 

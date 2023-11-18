@@ -14,8 +14,6 @@ public interface ModelService {
 
     Optional<List<Model>> findAllByBrand(UUID uuid);
 
-    Optional<Model> findById(UUID uuid);
-
     List<Model> findAll();
 
     void deleteModel(UUID uuid);

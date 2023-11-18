@@ -50,13 +50,13 @@ public class BrandDefaultController implements BrandController {
     @Override
     public GetBrandsResponse getBrands() {
 
-        List<Brand> Brands = service.listAll();
+        List<Brand> Brands = service.findAll();
 
         if(Brands.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NO_CONTENT);
         }
         else {
-            return brandsToResponse.apply(service.listAll());
+            return brandsToResponse.apply(service.findAll());
         }
     }
 

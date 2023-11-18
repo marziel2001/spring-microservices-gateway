@@ -61,7 +61,7 @@ public class ModelDefaultController implements ModelController {
 
     @Override
     public GetModelResponse getModel(UUID id) {
-        return service.findById(id)
+        return service.find(id)
             .map(modelToResponse)
             .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }

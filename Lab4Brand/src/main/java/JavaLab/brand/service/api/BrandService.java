@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public interface BrandService {
 
-    List<Brand> listAll();
+    List<Brand> findAll();
 
     Optional<Brand> find(UUID id);
 

@@ -37,11 +37,6 @@ public class ModelDefaultService implements ModelService {
     }
 
     @Override
-    public Optional<Model> findById(UUID uuid) {
-        return repository.findByUuid(uuid);
-    }
-
-    @Override
     public List<Model> findAll() {
         return repository.findAll();
     }
