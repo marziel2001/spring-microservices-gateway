@@ -1,5 +1,7 @@
 package JavaLab.brand.event.repository.rest;
 
+import JavaLab.brand.dto.PutBrandRequest;
+import JavaLab.brand.entity.Brand;
 import JavaLab.brand.event.repository.api.BrandEventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -21,5 +23,10 @@ public class BrandEventRestRepository implements BrandEventRepository {
     @Override
     public void delete(UUID id) {
         restTemplate.delete("/api/brands/{id}", id);
+    }
+
+    @Override
+    public void create(Brand brand) {
+        restTemplate.put("/api/brands/{id}", brand);
     }
 }

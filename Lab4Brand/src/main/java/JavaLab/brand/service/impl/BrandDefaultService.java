@@ -38,6 +38,7 @@ public class BrandDefaultService implements BrandService {
     @Override
     public void create(Brand brand) {
         repository.save(brand);
+        eventRepository.create(brand);
     }
 
     @Override
