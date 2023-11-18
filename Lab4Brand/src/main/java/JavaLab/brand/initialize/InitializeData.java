@@ -1,4 +1,4 @@
-package JavaLab.initialize;
+package JavaLab.brand.initialize;
 
 import JavaLab.brand.entity.Brand;
 import JavaLab.brand.service.api.BrandService;
