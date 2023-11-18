@@ -15,7 +15,6 @@ public interface BrandService {
     void create(Brand brand);
 
     void delete(UUID id);
-    void delete(String name);
 
     void updateBrand(Brand newBrand);
 }

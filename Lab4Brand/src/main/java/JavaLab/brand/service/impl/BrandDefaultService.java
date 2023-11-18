@@ -1,6 +1,7 @@
 package JavaLab.brand.service.impl;
 
 import JavaLab.brand.entity.Brand;
+import JavaLab.brand.event.repository.api.BrandEventRepository;
 import JavaLab.brand.repository.BrandRepository;
 import JavaLab.brand.service.api.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,12 @@ public class BrandDefaultService implements BrandService {
 
     private final BrandRepository repository;
 
+    private final BrandEventRepository eventRepository;
+
     @Autowired
-    public BrandDefaultService(BrandRepository repository) {
+    public BrandDefaultService(BrandRepository repository, BrandEventRepository eventRepository) {
         this.repository = repository;
+        this.eventRepository = eventRepository;
     }
 
 
@@ -39,11 +43,7 @@ public class BrandDefaultService implements BrandService {
     @Override
     public void delete(UUID id) {
         repository.findById(id).ifPresent(repository::delete);
-    }
-
-    @Override
-    public void delete(String name) {
-        repository.findAllByName(name).ifPresentOrElse(repository::delete, () -> System.out.println("not found"));
+        eventRepository.delete(id);
     }
 
     @Override
