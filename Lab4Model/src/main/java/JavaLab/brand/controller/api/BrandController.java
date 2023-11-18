@@ -1,5 +1,6 @@
 package JavaLab.brand.controller.api;
 
+import JavaLab.brand.entity.Brand;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +11,13 @@ public interface BrandController {
     @DeleteMapping("/api/brands/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteBrand(
+        @PathVariable("id")
+        UUID id
+    );
+
+    @PutMapping("/api/models/brands/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    void putBrand(
         @PathVariable("id")
         UUID id
     );

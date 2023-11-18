@@ -8,8 +8,6 @@ import java.util.UUID;
 
 public interface ModelService {
 
-
-
     Optional<Model> find(UUID id);
 
     Optional<List<Model>> findAllByBrand(UUID uuid);

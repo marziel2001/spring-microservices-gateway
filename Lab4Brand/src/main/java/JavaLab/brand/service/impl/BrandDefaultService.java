@@ -38,7 +38,7 @@ public class BrandDefaultService implements BrandService {
     @Override
     public void create(Brand brand) {
         repository.save(brand);
-        eventRepository.create(brand);
+//        eventRepository.save(brand.getUuid()); // TODO: czemu to nie dziala o co chodzi
     }
 
     @Override

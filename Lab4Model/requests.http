@@ -4,8 +4,11 @@ GET http://localhost:8081/api/models
 ### Get single model
 GET http://localhost:8081/api/models/729e14eb-fb57-46e0-b88b-ab601fec0c50
 
-### Get brands models
+### Get Nikon brands models
 GET http://localhost:8081/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f/models
+
+### Get Pentax brands models
+GET http://localhost:8081/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14/models
 
 ### Put new model
 PUT http://localhost:8081/api/models/f08221ae-0f32-4c0d-b000-f975fcff0bb9

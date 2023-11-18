@@ -1,6 +1,7 @@
 package JavaLab.brand.controller.impl;
 
 import JavaLab.brand.controller.api.BrandController;
+import JavaLab.brand.entity.Brand;
 import JavaLab.brand.service.api.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,4 +32,11 @@ public class BrandDefaultController implements BrandController {
                 }
             );
     }
+
+    @Override
+    public void putBrand(UUID id) {
+        service.create(Brand.builder().uuid(id).build());
+    }
+
+
 }
