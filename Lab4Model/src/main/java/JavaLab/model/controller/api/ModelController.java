@@ -24,11 +24,11 @@ public interface ModelController {
         UUID id
     );
 
-    @GetMapping("/api/brands/{brandId}/models")
+    @GetMapping("/api/brands/{id}/models")
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     GetModelsResponse getBrandsModels(
-        @PathVariable("brandId")
+        @PathVariable("id")
         UUID id
     );
 

@@ -13,6 +13,8 @@ public interface BrandService {
 
     void create(Brand brand);
 
+    void create(UUID id);
+
     void delete(UUID id);
 
 }

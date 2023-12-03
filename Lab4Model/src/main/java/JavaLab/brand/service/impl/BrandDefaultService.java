@@ -31,6 +31,11 @@ public class BrandDefaultService implements BrandService {
     }
 
     @Override
+    public void create(UUID id) {
+        repository.save(Brand.builder().uuid(id).build());
+    }
+
+    @Override
     public void delete(UUID id) {
         repository.findById(id).ifPresent(repository::delete);
     }

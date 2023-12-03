@@ -35,7 +35,7 @@ public class InitializeData implements InitializingBean {
             .yearOfEst(1917)
             .build();
 
-        brandService.create(nikon);
-        brandService.create(sony);
+        brandService.save(nikon);
+        brandService.save(sony);
     }
 }

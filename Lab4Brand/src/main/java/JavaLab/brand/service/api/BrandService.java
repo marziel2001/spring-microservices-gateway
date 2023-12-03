@@ -14,6 +14,8 @@ public interface BrandService {
 
     void create(Brand brand);
 
+    void save(Brand brand);
+
     void delete(UUID id);
 
     void updateBrand(Brand newBrand);

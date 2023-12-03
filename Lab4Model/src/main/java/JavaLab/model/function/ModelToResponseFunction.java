@@ -14,7 +14,7 @@ public class ModelToResponseFunction implements Function<Model, GetModelResponse
             .uuid(entity.getUuid())
             .name(entity.getName())
             .price(entity.getPrice())
-            .announceDate(entity.getAnnounceYear())
+            .announceYear(entity.getAnnounceYear())
             .build();
     }
 }

@@ -15,11 +15,12 @@ public interface BrandController {
         UUID id
     );
 
-    @PutMapping("/api/models/brands/{id}")
+    @PutMapping("/api/brands/{id}/models")
     @ResponseStatus(HttpStatus.CREATED)
     void putBrand(
         @PathVariable("id")
         UUID id
     );
+
 
 }

@@ -8,5 +8,5 @@ import java.util.UUID;
 public interface BrandEventRepository {
 
     void delete(UUID id);
-    void save(UUID id);
+    void create(Brand brand);
 }

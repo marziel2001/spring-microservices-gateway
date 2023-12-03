@@ -27,8 +27,7 @@ public interface BrandController {
     @DeleteMapping("/api/brands/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteBrand(
-        @PathVariable("id")
-        UUID id
+        @PathVariable("id") UUID id
     );
 
     @PutMapping("/api/brands/{id}")

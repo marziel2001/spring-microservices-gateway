@@ -4,6 +4,7 @@ import JavaLab.brand.entity.Brand;
 import JavaLab.brand.event.repository.api.BrandEventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
@@ -25,7 +26,7 @@ public class BrandEventRestRepository implements BrandEventRepository {
     }
 
     @Override
-    public void save(UUID id) {
-        restTemplate.put("/api/models/brands/{id}", id);
+    public void create(Brand brand) {
+        restTemplate.put("/api/brands/"+ brand.getUuid() +"/models", brand.getUuid());
     }
 }
