@@ -24,7 +24,6 @@ public class BrandDefaultController implements BrandController {
 
     @Override
     public void deleteBrand(UUID id) {
-        System.out.println("delete brand wywolany w modelu");
         service.find(id)
             .ifPresentOrElse(
                 brand -> service.delete(id),
@@ -36,8 +35,6 @@ public class BrandDefaultController implements BrandController {
 
     @Override
     public void putBrand(UUID id) {
-
-        System.out.println("ustaw brand w modelu");
         service.create(id);
     }
 

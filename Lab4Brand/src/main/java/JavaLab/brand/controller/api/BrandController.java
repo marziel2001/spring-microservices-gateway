@@ -30,11 +30,9 @@ public interface BrandController {
         @PathVariable("id") UUID id
     );
 
-    @PutMapping("/api/brands/{id}")
+    @PutMapping("/api/brands")
     @ResponseStatus(HttpStatus.CREATED)
     void putBrand(
-        @PathVariable("id")
-        UUID id,
         @RequestBody
         PutBrandRequest request
     );

@@ -68,8 +68,8 @@ public class BrandDefaultController implements BrandController {
     }
 
     @Override
-    public void putBrand(UUID id, PutBrandRequest request) {
-        service.create(putRequestToBrand.apply(id, request));
+    public void putBrand(PutBrandRequest request) {
+        service.create(putRequestToBrand.apply(request));
     }
 
     @Override
