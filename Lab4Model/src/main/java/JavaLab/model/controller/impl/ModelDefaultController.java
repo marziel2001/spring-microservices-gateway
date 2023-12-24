@@ -74,8 +74,8 @@ public class ModelDefaultController implements ModelController {
     }
 
     @Override
-    public void putModel(UUID id, PutModelRequest request) {
-        service.create(putRequestToModel.apply(id, request));
+    public void putModel(PutModelRequest request) {
+        service.create(putRequestToModel.apply(request));
     }
 
     @Override

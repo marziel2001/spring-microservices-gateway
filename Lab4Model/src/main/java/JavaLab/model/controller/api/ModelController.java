@@ -32,11 +32,9 @@ public interface ModelController {
         UUID id
     );
 
-    @PutMapping("/api/models/{id}")
+    @PutMapping("/api/models")
     @ResponseStatus(HttpStatus.CREATED)
         void putModel(
-            @PathVariable("id")
-            UUID id,
             @RequestBody
             PutModelRequest request
     );

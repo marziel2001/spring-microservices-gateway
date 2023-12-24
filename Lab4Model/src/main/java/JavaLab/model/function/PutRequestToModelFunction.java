@@ -7,12 +7,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 @Component
-public class PutRequestToModelFunction implements BiFunction<UUID, PutModelRequest, Model> {
-    public Model apply(UUID id, PutModelRequest request) {
+public class PutRequestToModelFunction implements Function<PutModelRequest, Model> {
+    public Model apply(PutModelRequest request) {
         return Model.builder()
-            .uuid(id)
+            .uuid(UUID.randomUUID())
             .brand(Brand.builder().uuid(request.getBrand()).build())
             .name(request.getName())
             .announceYear(request.getAnnounceYear())
